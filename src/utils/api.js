@@ -27,7 +27,7 @@ API.interceptors.response.use(
 );
 
 // ── CLINIC AUTH ────────────────────────────
-export const clinicSignup = (data) => API.post('//api/auth/clinic/', data);
+export const clinicSignup = (data) => API.post('/auth/clinic/signup', data);
 export const clinicLogin = (data) => API.post('/clinic/login', data);
 export const getClinicProfile = () => API.get('/clinic/profile');
 export const updateClinicProfile = (data) => API.put('/clinic/profile', data);
