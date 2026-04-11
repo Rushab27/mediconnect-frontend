@@ -28,13 +28,13 @@ API.interceptors.response.use(
 
 // ── CLINIC AUTH ────────────────────────────
 export const clinicSignup = (data) => API.post('/auth/clinic/signup', data);
-export const clinicLogin = (data) => API.post('/clinic/login', data);
+export const clinicLogin = (data) => API.post('/auth/clinic/login', data);
 export const getClinicProfile = () => API.get('/clinic/profile');
 export const updateClinicProfile = (data) => API.put('/clinic/profile', data);
 
 // ── PATIENT AUTH ───────────────────────────
-export const patientSignup = (data) => API.post('/patient/signup', data);
-export const patientLogin = (data) => API.post('/patient/login', data);
+export const patientSignup = (data) => API.post('/auth/patient/signup', data);
+export const patientLogin = (data) => API.post('/auth/patient/login', data);
 export const getPatientProfile = () => API.get('/patient/profile');
 
 // ── DOCTORS ────────────────────────────────
