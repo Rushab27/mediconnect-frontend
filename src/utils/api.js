@@ -17,10 +17,10 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-export const clinicSignup  = (data) => api.post('/api/auth/clinic/signup', data);
-export const clinicLogin   = (data) => api.post('/api/auth/clinic/login', data);
-export const patientSignup = (data) => api.post('/api/auth/patient/signup', data);
-export const patientLogin  = (data) => api.post('/api/auth/patient/login', data);
+export const clinicSignup  = (data) => api.post('/api/clinic/signup', data);
+export const clinicLogin   = (data) => api.post('/api/clinic/login', data);
+export const patientSignup = (data) => api.post('/api/patient/signup', data);
+export const patientLogin  = (data) => api.post('/api/patient/login', data);
 
 export const getAppointments   = ()          => api.get('/api/appointments');
 export const createAppointment = (data)      => api.post('/api/appointments', data);
