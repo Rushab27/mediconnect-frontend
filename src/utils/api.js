@@ -30,5 +30,10 @@ export const getPrescriptions        = ()          => api.get('/api/prescription
 export const createPrescription      = (data)      => api.post('/api/prescriptions', data);
 export const getDoctors              = ()          => api.get('/api/doctors');
 export const addDoctor               = (data)      => api.post('/api/doctors', data);
+export const getPatientAppointments  = ()          => api.get('/api/patient/appointments');
+export const cancelAppointment       = (id)        => api.put(`/api/appointments/${id}/cancel`);
+export const getClinicProfile        = ()          => api.get('/api/clinic/profile');
+export const getPatientProfile       = ()          => api.get('/api/patient/profile');
+export const getPublicDoctors        = (clinic_id) => api.get(`/api/public/clinics/${clinic_id}/doctors`);
 
 export default api;
